@@ -3,19 +3,19 @@ package p1;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
-public class Driverbrowser {
+public class DriverBrowser {
 	private static WebDriver driver;
 	
 	public static void main(String[] args) {
-		// ÉèÖÃÏµÍ³±äÁ¿Ö¸ÏòdriverÎÄ¼şËùÔÚÂ·¾¶
-		System.setProperty("webdriver.chrome.driver", "C:\\Users\\lsh11614\\Desktop\\codes\\sources\\webdriver\\chromedriver.exe");
-		// ´´½¨ChromeÇı¶¯¶ÔÏó
+		// è®¾ç½®ç³»ç»Ÿå˜é‡æŒ‡å‘driveræ–‡ä»¶æ‰€åœ¨è·¯å¾„
+		System.setProperty("webdriver.chrome.driver", ".\\resources\\chromedriver.exe");
+		// åˆ›å»ºChromeé©±åŠ¨å¯¹è±¡
 		driver = new ChromeDriver();
-		// ×î´ó»¯´°¿Ú
+		// æœ€å¤§åŒ–çª—å£
 		driver.manage().window().maximize();
-		// ´ò¿ª°Ù¶ÈÊ×Ò³
+		// æ‰“å¼€ç™¾åº¦é¦–é¡µ
 		driver.get("https://www.baidu.com");
-		// ÍË³öä¯ÀÀÆ÷
+		// é€€å‡ºæµè§ˆå™¨
 		driver.quit();
 	}
 }
