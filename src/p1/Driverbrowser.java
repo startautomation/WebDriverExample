@@ -16,6 +16,6 @@ public class Driverbrowser {
 		// 打开百度首页
 		driver.get("https://www.baidu.com");
 		// 退出浏览器
-		driver.quit();;
+		driver.quit();
 	}
 }
